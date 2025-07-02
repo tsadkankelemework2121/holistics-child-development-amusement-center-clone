@@ -4,10 +4,7 @@ import Footer from "./layout/Footer"
 import HomePage from "./pages/HomePage"
 import AboutPage from "./pages/AboutPage"
 import GamesPage from "./pages/GamesPage"
-import EventsPage from "./pages/EventsPage"
-import MembershipsPage from "./pages/MembershipsPage"
-import BlogsPage from "./pages/BlogsPage"
-import "./index.css"
+
 
 function App() {
   return (
@@ -19,9 +16,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/games" element={<GamesPage />} />
-            <Route path="/events" element={<EventsPage />} />
-            <Route path="/memberships" element={<MembershipsPage />} />
-            <Route path="/blogs" element={<BlogsPage />} />
+
           </Routes>
         </main>
         <Footer />

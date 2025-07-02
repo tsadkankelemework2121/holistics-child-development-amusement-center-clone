@@ -1,15 +1,17 @@
 import AboutHero from "../components/about/Hero"
-import AboutTeam from "../components/about/Team"
 import AboutMission from "../components/about/Mission"
-import AboutHistory from "../components/about/History"
+import AboutQuotes from "../components/about/Quotes"
+import AboutDifferentiators from "../components/about/Differentiators"
+import AboutMembership from "../components/about/Membership"
 
 const AboutPage = () => {
   return (
     <div>
       <AboutHero />
       <AboutMission />
-      <AboutHistory />
-      <AboutTeam />
+      <AboutQuotes />
+      <AboutDifferentiators />
+      <AboutMembership />
     </div>
   )
 }

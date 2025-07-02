@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "title": "About us",
+    "description": "We offer a comprehensive suite of programs that seamlessly integrate play, education, and community engagement, creating an enriching environment where every child can explore their unique capabilities. By fostering inclusivity and resilience, RICHFAM ensures that children aged 1-19 are equipped with the essential skills to thrive in an ever-evolving global landscape."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "To support holistic child development by combining fun, education, and creativity in a nurturing and inclusive space."
+  },
+  "values": [
+    {
+      "title": "Inclusivity",
+      "description": "We welcome children from all backgrounds and abilities, creating a diverse and supportive community."
+    },
+    {
+      "title": "Holistic Development",
+      "description": "Our programs address physical, emotional, social, and cognitive development needs."
+    },
+    {
+      "title": "Innovation",
+      "description": "We continuously evolve our methods to incorporate the latest in child development research."
+    }
+  ],
+  "team": [
+    {
+      "name": "Dr. Sarah Johnson",
+      "role": "Director & Child Development Specialist",
+      "bio": "15+ years experience in child psychology and educational program development",
+      "image": "/placeholder.svg?height=300&width=300"
+    },
+    {
+      "name": "Michael Chen",
+      "role": "Program Coordinator",
+      "bio": "Expert in designing age-appropriate learning activities and family engagement",
+      "image": "/placeholder.svg?height=300&width=300"
+    },
+    {
+      "name": "Emily Rodriguez",
+      "role": "Community Outreach Manager",
+      "bio": "Specialist in building inclusive communities and family support networks",
+      "image": "/placeholder.svg?height=300&width=300"
+    }
+  ]
+}

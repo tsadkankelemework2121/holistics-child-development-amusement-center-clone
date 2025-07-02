@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "title": "Welcome to RICHFAM",
+    "subtitle": "Integrated Children Development Center",
+    "description": "Join thousands of families in our comprehensive programs that combine play, education, and community engagement for children aged 1-19.",
+    "buttons": [{ "text": "Explore Programs", "type": "primary" }, { "text": "Learn More", "type": "secondary" }]
+  },
+  "features": [
+    {
+      "icon": "gamepad",
+      "title": "Interactive Learning",
+      "description": "Engaging educational games and activities designed for different age groups"
+    },
+    {
+      "icon": "calendar",
+      "title": "Regular Events",
+      "description": "Weekly workshops, competitions, and community building activities"
+    },
+    {
+      "icon": "users",
+      "title": "Family Community",
+      "description": "Connect with other families and build lasting relationships"
+    },
+    {
+      "icon": "award",
+      "title": "Skill Development",
+      "description": "Programs focused on developing essential life skills and creativity"
+    }
+  ],
+  "stats": [
+    { "number": "1000+", "label": "Happy Families" },
+    { "number": "50+", "label": "Programs Available" },
+    { "number": "20+", "label": "Weekly Activities" },
+    { "number": "98%", "label": "Satisfaction Rate" }
+  ]
+}

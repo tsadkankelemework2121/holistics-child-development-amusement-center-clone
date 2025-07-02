@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "title": "Interactive Learning Games",
+    "description": "Discover our collection of educational games and activities designed to promote learning through play for children of all ages."
+  },
+  "categories": [
+    {
+      "title": "Early Childhood (1-5 years)",
+      "description": "Sensory play, basic motor skills, and foundational learning",
+      "games": ["Color Recognition", "Shape Sorting", "Musical Play", "Story Time"]
+    },
+    {
+      "title": "Elementary (6-10 years)",
+      "description": "Academic skills, problem-solving, and social interaction",
+      "games": ["Math Adventures", "Reading Quests", "Science Experiments", "Art & Craft"]
+    },
+    {
+      "title": "Middle School (11-15 years)",
+      "description": "Critical thinking, teamwork, and skill development",
+      "games": ["Strategy Games", "Coding Basics", "Team Challenges", "Creative Writing"]
+    },
+    {
+      "title": "Teen Programs (16-19 years)",
+      "description": "Leadership, life skills, and career preparation",
+      "games": ["Leadership Training", "Financial Literacy", "Career Exploration", "Community Service"]
+    }
+  ]
+}

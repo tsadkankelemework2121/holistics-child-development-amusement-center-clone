@@ -1,0 +1,20 @@
+{
+  "mainNavigation": [
+    { "name": "Home", "path": "/" },
+    { "name": "About", "path": "/about" },
+    { "name": "Games", "path": "/games" },
+    { "name": "Events", "path": "/events" },
+    { "name": "Membership", "path": "/memberships" },
+    { "name": "Blog", "path": "/blogs" }
+  ],
+  "footerNavigation": [
+    { "name": "HOME", "path": "/" },
+    { "name": "ABOUT", "path": "/about" },
+    { "name": "GAMES", "path": "/games" },
+    { "name": "EVENTS", "path": "/events" },
+    { "name": "MEMBERSHIP", "path": "/memberships" },
+    { "name": "BLOG", "path": "/blogs" },
+    { "name": "CONTACT US", "path": "/contact" },
+    { "name": "SUPPORT", "path": "/support" }
+  ]
+}

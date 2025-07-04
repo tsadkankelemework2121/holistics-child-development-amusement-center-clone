@@ -126,24 +126,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-blue-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-white-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-4 mb-4 md:mb-0">
             <span className="text-lg">© 2024 RICHFAM. All Rights Reserved.</span>
-            <div className="flex space-x-2">
-              <button className="bg-gray-700 hover:bg-gray-600 p-2 rounded-full transition-colors">
-                <ChevronLeft className="w-5 h-5" />
-              </button>
-              <button className="bg-gray-700 hover:bg-gray-600 p-2 rounded-full transition-colors">
-                <ChevronRight className="w-5 h-5" />
-              </button>
-            </div>
           </div>
           <div className="flex items-center space-x-2">
             <span className="text-lg">Powered by Helder Technologies</span>
-            <button className="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-full text-sm transition-colors flex items-center">
-              <span className="mr-2">🔄</span>
-              Restart
-            </button>
           </div>
         </div>
       </div>

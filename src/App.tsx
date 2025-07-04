@@ -3,6 +3,7 @@ import Navbar from "./layout/Navbar"
 import Footer from "./layout/Footer"
 import HomePage from "./pages/HomePage"
 import AboutPage from "./pages/AboutPage"
+import MembershipsPage from "./pages/MembershipsPage"
 import GamesPage from "./pages/GamesPage"
 
 
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/games" element={<GamesPage />} />
+            <Route path="/memberships" element={<MembershipsPage/>} />
 
           </Routes>
         </main>

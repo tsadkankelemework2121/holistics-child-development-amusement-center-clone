@@ -1,77 +1,126 @@
-const EventsHero = () => {
-  return (
-    <section className="bg-gradient-to-br from-cyan-400 via-green-400 to-blue-500 py-20 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-8 leading-tight">
-            Exciting Events for Every Child!
-          </h1>
-          <p className="text-xl text-white max-w-4xl mx-auto leading-relaxed">
-            At RICHFAM, we offer a variety of events designed to engage, inspire, and support children's development.
-            From hands-on workshops to seasonal celebrations, each event is crafted to provide fun and learning
-            opportunities for kids of all ages.
-          </p>
-        </div>
-      </div>
+"use client";
+import girlImg from "../../assets/leftgirl.png";
+import monImg from "../../assets/monster.png";
+import eventbackImg from "../../assets/eventback.png";
+import rockyImg from "../../assets/rocket.png";
+import giftImg from "../../assets/gift.png";
+import bubbleImg from "../../assets/bubble.png";
 
-      {/* Character Illustrations */}
-      {/* Left Character - Child */}
-      <div className="absolute bottom-0 left-16">
-        <div className="w-24 h-32 bg-orange-400 rounded-t-full rounded-b-lg relative">
-          <div className="absolute top-4 left-4 w-4 h-4 bg-white rounded-full"></div>
-          <div className="absolute top-4 right-4 w-4 h-4 bg-white rounded-full"></div>
-          <div className="absolute top-8 left-6 w-12 h-2 bg-white rounded-full"></div>
-          {/* Hair */}
-          <div className="absolute -top-4 left-2 w-20 h-12 bg-amber-800 rounded-full"></div>
-          {/* Overalls */}
-          <div className="absolute top-12 left-2 w-20 h-16 bg-yellow-500 rounded-lg"></div>
-          {/* Arms */}
-          <div className="absolute top-14 -left-4 w-8 h-12 bg-orange-400 rounded-full transform rotate-12"></div>
-          <div className="absolute top-14 -right-4 w-8 h-12 bg-orange-400 rounded-full transform -rotate-12"></div>
-        </div>
-      </div>
-
-      {/* Right Character - Dinosaur */}
-      <div className="absolute bottom-0 right-16">
-        <div className="w-28 h-36 bg-purple-500 rounded-t-full rounded-b-lg relative">
-          <div className="absolute top-6 left-6 w-4 h-4 bg-white rounded-full"></div>
-          <div className="absolute top-6 right-6 w-4 h-4 bg-white rounded-full"></div>
-          <div className="absolute top-10 left-8 w-12 h-2 bg-white rounded-full"></div>
-          {/* Spikes on head */}
-          <div className="absolute -top-2 left-4 w-4 h-6 bg-purple-700 transform rotate-12"></div>
-          <div className="absolute -top-2 left-8 w-4 h-6 bg-purple-700"></div>
-          <div className="absolute -top-2 left-12 w-4 h-6 bg-purple-700 transform -rotate-12"></div>
-          {/* Arms */}
-          <div className="absolute top-16 -left-4 w-8 h-12 bg-purple-500 rounded-full"></div>
-          <div className="absolute top-16 -right-4 w-8 h-12 bg-purple-500 rounded-full"></div>
-          {/* Orange vest */}
-          <div className="absolute top-14 left-4 w-20 h-16 bg-orange-500 rounded-lg"></div>
-        </div>
-      </div>
-
-      {/* Floating Elements */}
-      <div className="absolute top-20 left-1/4 w-8 h-8 bg-yellow-400 transform rotate-45"></div>
-      <div className="absolute top-32 right-1/4 w-6 h-6 bg-pink-400 rounded-full"></div>
-      <div className="absolute top-16 left-1/2 w-4 h-4 bg-white rounded-full"></div>
-
-      {/* Gift Box */}
-      <div className="absolute top-24 right-1/3">
-        <div className="w-12 h-12 bg-purple-600 rounded relative">
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-2 h-12 bg-yellow-400"></div>
-          <div className="absolute top-1/2 left-0 transform -translate-y-1/2 w-12 h-2 bg-yellow-400"></div>
-          <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-6 h-4 bg-yellow-400 rounded-t-full"></div>
-        </div>
-      </div>
-
-      {/* Rocket */}
-      <div className="absolute top-40 left-1/3">
-        <div className="w-6 h-16 bg-red-500 rounded-t-full relative">
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-8 h-4 bg-orange-400 rounded-b-full"></div>
-          <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-white rounded-full"></div>
-        </div>
-      </div>
-    </section>
-  )
+interface EventsHeroProps {
+  activeTab: string;
+  setActiveTab: (tab: string) => void;
 }
 
-export default EventsHero
+const EventsHero = ({ activeTab, setActiveTab }: EventsHeroProps) => {
+  return (
+    <div className="relative">
+      {/* Hero Section */}
+      <section className="relative h-[75vh] min-h-[500px] overflow-hidden bg-gradient-to-br from-cyan-400 to-green-400">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src={eventbackImg.src}
+            alt="Happy children at RICHFAM"
+            className="w-full h-full object-cover opacity-90"
+          />
+        </div>
+
+        {/* Cartoon Characters - Left */}
+        <div className="absolute left-[5%] bottom-0 w-1/4 max-w-[200px] h-[85vh]">
+          <img
+            src={girlImg.src}
+            alt="Cartoon character"
+            className="w-full h-full object-contain object-left-bottom"
+          />
+        </div>
+
+        {/* Cartoon Characters - Right */}
+        <div className="absolute right-0 bottom-0 w-1/4 max-w-xs h-auto">
+          <img
+            src={monImg.src}
+            alt="Cartoon character"
+            className="w-full h-auto"
+          />
+        </div>
+
+        {/* Rocket Image - Bottom Right - Larger Size with Increased Opacity */}
+        <div className="absolute right-[30%] -bottom-[14%] w-[40%] min-w-[150px] max-w-[300px] z-20">
+          <img
+            src={rockyImg.src}
+            alt="Rocket"
+            className="w-full h-auto animate-float opacity-100"
+          />
+        </div>
+           {/* gift Image - Bottom Right - Larger Size with Increased Opacity */}
+        <div className="absolute right-[50%] bottom-[59%] w-[15%] min-w-[150px] max-w-[300px] z-20">
+          <img
+            src={giftImg.src}
+            alt="Rocket"
+            className="w-full h-auto animate-float opacity-100"
+          />
+        </div>
+
+       <div className="absolute right-[60%] bottom-[45%] w-[6%] min-w-[80px] max-w-[120px] z-20">
+  <img
+    src={bubbleImg.src}
+    alt="Bubble"
+    className="w-full h-auto animate-float opacity-100"
+  />
+</div>
+
+
+        {/* Content Container */}
+        <div className="relative z-10 h-full flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto">
+           <h1 className="text-3xl md:text-5xl lg:text-5xl font-semibold text-blue-900 mb-6 leading-tight">
+  Exciting Events for Every <br></br> Child!
+</h1>
+            <p className="text-lg md:text-xl text-white max-w-3xl mx-auto">
+              At RICHFAM, we offer a variety of events designed to engage, inspire, and support children's development. From hands-on workshops to seasonal celebrations, each event is crafted to provide fun and learning opportunities for kids of all ages.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Full-width Tab Container */}
+      <div className="w-full bg-white py-6 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row gap-3 justify-center md:justify-start">
+            <button
+              onClick={() => setActiveTab("upcoming")}
+              className={`px-8 py-3 rounded-full font-bold text-sm shadow-lg transition-colors ${
+                activeTab === "upcoming"
+                  ? "bg-yellow-500 text-gray-900"
+                  : "bg-yellow-100 text-gray-800 hover:bg-yellow-200"
+              }`}
+            >
+              Upcoming Events
+            </button>
+            <button
+              onClick={() => setActiveTab("workshops")}
+              className={`px-8 py-3 rounded-full font-bold text-sm shadow-lg transition-colors ${
+                activeTab === "workshops"
+                  ? "bg-yellow-500 text-gray-900"
+                  : "bg-yellow-100 text-gray-800 hover:bg-yellow-200"
+              }`}
+            >
+              Workshops
+            </button>
+            <button
+              onClick={() => setActiveTab("special")}
+              className={`px-8 py-3 rounded-full font-bold text-sm shadow-lg transition-colors ${
+                activeTab === "special"
+                  ? "bg-yellow-500 text-gray-900"
+                  : "bg-yellow-100 text-gray-800 hover:bg-yellow-200"
+              }`}
+            >
+              Special Programs
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default EventsHero;

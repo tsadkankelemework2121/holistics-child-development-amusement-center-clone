@@ -1,23 +1,28 @@
+import abImg from '../../assets/abrham.png'
+import alImg from '../../assets/albert.png'
+import mImg from '../../assets/mandela.png'
+
 const AboutQuotes = () => {
   const quotes = [
     {
       quote: "The best way to predict the future is to create it.",
       author: "Abraham Lincoln",
-      image: "/placeholder.svg?height=300&width=300",
+      image: abImg.src,
       description:
         "RICHFAM believes in empowering all children, including those with disabilities, to shape their futures through creativity and participation.",
     },
     {
       quote: "Play is the highest form of research.",
       author: "Albert Einstein",
-      image: "/placeholder.svg?height=300&width=300",
+      image: alImg.src,
+      
       description:
         "We recognize that play is essential for all children's growth. It fuels curiosity and innovation, allowing every child to learn and discover their potential.",
     },
     {
       quote: "Education is the most powerful weapon which you can use to change the world.",
       author: "Nelson Mandela",
-      image: "/placeholder.svg?height=300&width=300",
+      image: mImg.src,
       description:
         "RICHFAM is built on transformative education that nurtures the growth of all children, fostering global citizens who lead with empathy and purpose.",
     },

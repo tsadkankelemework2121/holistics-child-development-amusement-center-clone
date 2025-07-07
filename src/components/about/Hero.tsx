@@ -1,9 +1,12 @@
+//import backgroundImg from "../../assets/image.png";
+
 const AboutHero = () => {
   return (
     <section
       className="relative min-h-screen bg-cover bg-center bg-no-repeat flex flex-col"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/src/assets/images/about-hero-new.jpg')`,
+        //backgroundImage: `url(${backgroundImg})`,
+         //backgroundColor: "red", 
       }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
